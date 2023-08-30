@@ -110,6 +110,17 @@ CREATE TABLE `servicio` (
   `TIPO` varchar(50) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+-- Volcado de datos para la tabla `servicio`
+--
+
+INSERT INTO `dispositivos` (`ID`, `TIPO`) VALUES
+(1, 'Reparación / Cambio'),
+(2, 'Instalación / Configuración'),
+(3, 'Resguardo de Información'),
+(4, 'Apoyo'),
+(5, 'Formateo de PC'),
+(6, 'Mantenimiento'),
+(7, 'Equipo Completo');
 -- --------------------------------------------------------
 
 --
