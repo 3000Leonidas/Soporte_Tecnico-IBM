@@ -1,0 +1,19 @@
+* HTML, CSS y javaScript 
+Panel es la carpeta principal del sistema web el lenguaje en el que esta empleado el sistema es de PHP junto a la estructura es de:
+la base de datos BD se realizo en :
+* PhpmyAdmin
+La extención del archivo es de registro_soporte.sql
+
+el sistema esta divido en dos paneles 
+*Administrativo
+*Cliente
+
+los archivos del panel Administrativo son: P_C_ANº -> (P_C_A1, ......)
+Los archivos del panel cliente son: P_CNº -> (P_C1, ....)
+
+archivos que faltan concluirlos en medio proceso
+// 
+* P_C_A2 - Solicitudes falta agarrar los datos de la base de datos que estan anclados y son establecidos en la tabla e realizar una importacion de los datos en formato de pdf e imprimir
+* P_C_A3 - añadir una seccion de notificacion de alerta de solicitud
+
+a los archivos mencionados falta la conclusion del archivo.
