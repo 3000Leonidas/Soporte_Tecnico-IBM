@@ -1,0 +1,169 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+header{
+    width:100%;
+    height:70px;
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    background-image: radial-gradient(circle, #e8fd00, #efe900, #f3d500, #f4c100, #f2ae14);
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size:1.3rem;
+    font-weight:550;
+    padding: 10px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+nav{
+    display:flex;
+    position: relative;
+    padding-top: 15px;
+}
+.btn {
+    display: flex;
+    position: relative;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: transparent;
+    border: none;
+    transition: 0.3s ease;
+    user-select: none;
+    text-shadow: 2px 2px 8px #23252c;
+  }
+  
+  .btn:hover {
+    color: #23252c;
+    background: #ff9900;
+    border: 1px solid #ff9900;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #ff9900,
+                0 0 20px #ff9900,
+                0 0 50px #ff9900,
+                0 0 100px #ff9900;
+    cursor: pointer;
+  }
+  /*---------*/
+  .container{
+    display: flex;
+    position: relative;
+    height: 546px;
+    color: #131212;
+    justify-content: space-between;
+}
+.container .container_panel{
+    flex-direction: column;
+    width: 400px;
+    /* height: 500px; */
+    position: relative;
+    display:flex;
+    margin: 2px;
+    padding: 10px 0 0 2px;
+}
+.container_panel h2{
+    font-size: 1.5rem;
+    margin: 10px;
+    padding:10px 0 20px 0;
+    text-align: center;
+}
+.container_panel a{
+    color:  #000000;
+    text-decoration: none;
+    margin: 5px;
+    padding: 10px 0 0 25px;
+}
+.container_panel a:hover{
+    color: #1b1313;
+}
+.container_panel a i {
+    margin:0 0 0 5px;
+    padding: 0 10px 0 0;
+}
+.container .container_content{
+    display: block;
+    height: 480px;
+    width: 100%;
+    justify-content: center;
+}
+.container .container_content h2{
+    font-size: 2rem;
+    text-align: center;
+}
+.container .container_content .panel{
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 2px 40px;
+    width: 100%;
+}
+.cuadro1 , .cuadro2{
+    background-size: cover;
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px #23252c;
+    font-size: 2rem;
+    width: 350px;
+    height: 250px;
+    border: none;
+}
+
+.cuadro1{
+    background-image: url('Img/solicitud.jpg');
+}
+.cuadro2{
+    background-image: url(Img/types-of-forms-featured.jpg);
+    
+}
+.container_content img{
+    width: 400px;
+    height: 400px;
+    display: block;
+    position: absolute;
+    z-index: -1;
+    border-radius: 30px;
+}
+.container_content a{
+    display: grid;
+    text-decoration: none;
+    font-size: 30px;
+    color:#23252c;
+    text-shadow: 3px 3px 5px dimgrey ;
+    text-align: center;
+    margin: 50px;
+    transform: translate(-20px, 120px);
+}
+
+.cuadro1:hover {
+    opacity: 0.5;
+}
+
+.cuadro2:hover{
+    opacity: 0.5;
+}
+/*------Footer-------*/
+footer{
+    font-size: 1rem;
+    color: #ffffff;
+    display: flex;
+    height: 35px;
+    width: 100%;
+    background: #070606;
+} 
+footer p{
+    width: 100%;
+    height: auto;
+    text-align: center;
+}

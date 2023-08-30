@@ -1,0 +1,316 @@
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+/*     color:#fff; */
+    box-sizing:border-box;
+}
+body{
+    margin:0;
+    padding: 0;
+    height: 100%;
+}
+header{
+  width:100%;
+  height:60px;
+  display: flex;
+  position:relative;
+  align-items: center;
+  justify-content: space-between;
+  color: rgb(12, 12, 12);
+  background-image: radial-gradient(circle, #e8fd00, #efe900, #f3d500, #f4c100, #f2ae14);
+}
+.logo{
+  display: flex;
+    align-items: center;
+    font-size:1.3rem;
+    font-weight:auto;
+    padding: 10px 10px;
+    color: #ffffff;
+    text-transform: uppercase;
+}
+nav{
+  display:flex;
+  position: relative;
+}
+.btn-nav {
+    /* width: 1; */
+    display: flex;
+    position: relative;
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 1rem;
+    color: #ffffff;
+    background: transparent;
+    box-shadow: transparent;
+    border: none;
+    transition: 0.3s ease;
+    user-select: none;
+    text-shadow: 2px 2px 8px #23252c;
+  }
+  
+  .btn:hover {
+    color: #23252c;
+    background: #ff9900;
+    border: 1px solid #ff9900;
+    text-shadow: 0 0 5px #ffffff,
+                0 0 10px #ffffff,
+                0 0 20px #ffffff;
+    box-shadow: 0 0 5px #ff9900,
+                0 0 20px #ff9900,
+                0 0 50px #ff9900,
+                0 0 100px #ff9900;
+    cursor: pointer;
+  }
+  /*----------------------*/
+.container{
+    display: flex;
+    position: relative;
+    color: #0f0f0f;
+    justify-content: space-between;
+}
+.container .container_panel{
+    display:block;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 10px;
+    padding: 5px 50px 0 0;
+    top: 35%;
+}
+
+.container_panel h2{
+    font-size: 25px;
+    margin: 30px;
+    text-align: center;
+}
+.container_panel a{
+    color:  #0a0a0a;
+    text-decoration: none;
+    margin: 5px;
+    margin-left: 50px;
+}
+.container_panel a:hover{
+    color: #7e7979;
+}
+.container_panel #efecto{
+    text-decoration: line-through;
+    text-shadow: #f2ae14;
+}
+.container_panel a i {
+    padding: 25px 0 0 20px;
+}
+.container .formulario{
+    display: flex;
+    position: relative;
+    place-content: center;
+    width: 100%;
+    height: 100%;
+    border: none;
+    margin: 16px 25px 0 0;
+}
+
+/*------formulario Seleccion-------*/
+.formulario{
+    width: auto;
+    display: flex;
+    position: relative;
+    justify-content: space-around;
+    height: 100%;
+    margin: 100px;
+  }
+  .formulario_seleccion h2{
+    text-align: center;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  
+  .formulario p{
+    font-size: 1rem;
+    margin: 5px;
+  }
+  .formulario_seleccion{
+    display: flex;
+    width: 100% ;
+    flex-direction: column;
+    position: relative;
+    border: 1px solid #8f8e8e;
+    border-radius: 30px;
+    box-shadow: 5px 5px 10px #232323;
+    padding: 5px 15px;
+    /* background-image: radial-gradient(circle, #ecff1e, #f0eb07, #f2d700, #f1c400, #eeb104); */
+    color: #111111;
+  }
+/*----Seleccion multiple------*/
+form{
+    box-sizing: border-box;
+   }
+  .formulario_seleccion .input_boxE{
+    display: flex ;
+    position: relative  ;
+    width: 90%;
+    height: 50px;
+    align-items: center;
+    padding: 20px 0 0 20px;
+  }
+  .formulario_seleccion p{
+    width: 150px;
+    text-transform: uppercase;
+  }
+  select{
+    padding: 5px;
+    width: 750px;
+    border: none;
+    border-radius: 25px;
+    height: 25px;
+    background: transparent;
+  } 
+  
+  .wrapper {
+    --font-color-dark: #090909;
+    --font-color-light: #FFF;
+    --bg-color: transparent;
+    --main-color: #74736f89;
+    --fond-color: #d9e400;
+    position: relative;
+    width: 95%;
+    height: 36px;
+    background-color: var(--bg-color);
+    /* border: 1px solid var(--main-color); */
+    border-radius: 34px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 2px 1px var(--main-color);
+  }
+  
+  .opcion {
+    width: 100%;
+    height: 30px;
+    position: relative;
+    top: 0;
+    /* left: -30px; */
+  }
+  
+  .input_radio {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    appearance: none;
+    cursor: pointer;
+  }
+  
+  .btn-option {
+    width: 100%;
+    height: 100%;
+    background-color: var(--bg-color);
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .span {
+    color: var(--font-color-dark);
+  }
+  
+  .input_radio:checked + .btn-option {
+    background-color: var(--fond-color);
+  }
+  
+  .input_radio:checked + .btn-option .span {
+    color: var(--font-color-light);
+  }
+  
+  /*-----Problema------*/
+  .input_text {
+    display: flex;
+    position: relative;
+    top: 0px;
+    margin-top: 15px;
+    font-size: 1rem; 
+    border-radius: 10px;
+    padding: 5px; 
+    height: auto;
+    width: 100%;
+    border: none;
+    box-shadow: 5px 5px #757575;
+    outline: none;
+    resize: none;
+    background: transparent;
+  }
+  
+  
+  
+  .input_text:focus {
+    border: none;
+    border-bottom: 3px solid #3d3d3d;
+    
+    transition: border-bottom 0.2s; 
+    color: #3b3b3b;
+  }
+  
+  
+  
+  
+  /* === boton enviar ===*/
+  .boton{
+    width: 100%;
+    position: relative;
+    padding: 3rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .button {
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+  }
+  
+  /* button styling */
+  .button {
+    --border-right: 6px;
+    --text-stroke-color: rgb(0, 0, 0);
+    --animation-color: #d9e40d;
+    --fs-size: 1em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family: "Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -webkit-text-stroke: 2px var(--text-stroke-color);
+  }
+  /* this is the text, when you hover on button */
+  .hover-text {
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: var(--animation-color);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right) solid var(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 3px var(--animation-color);
+  }
+  .button:hover .hover-text {
+    width: 100%;
+    filter: drop-shadow(0 0 23px var(--animation-color))
+  }
+
+  /*----------------------*/
+footer{
+    font-size: 13px;
+    text-align: center;
+    color: #ffffff;
+    display: block;
+    height: 35px;
+    width: 100%;
+    background: #070606;
+} 
